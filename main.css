@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.2%;
+}
+
+h1 {
+    font-size: 4rem;
+    color: brown;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background-color: bisque;
+    color: darkgreen;
+    font-size: 2rem;
+    padding: 4rem;
+    width: 100%;
+}
+
+.section h1 {
+    grid-column: span 2;
+}
+
+.example-1 {
+    vertical-align: sub;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the radio button round */
+    border: .5rem solid lightgreen; /* Border color */
+    background-color: whitesmoke; /* Background color of the circle */
+    outline: none; /* Remove outline on focus (optional) */
+}
+
+.example-1:checked {
+    background-color: green;
+}
